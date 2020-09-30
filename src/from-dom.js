@@ -5,7 +5,10 @@ console.log(name);
 
 const doc = new jsPDF({
     // DOM ツリーを px ベースでデザインしているので、px を指定する必要がある
-    unit: 'px'
+    unit: 'px',
+    hotfixes: [
+        'px_scaling'
+    ]
 });
 doc.setFont('ipag', 'normal');
 doc.html(document.querySelector('.page'), {
