@@ -14,7 +14,7 @@ doc.setFont('ipag', 'normal');
 doc.html(document.querySelector('.container'), {
     callback: function (doc) {
         // なぜか最後に白紙の余分なページが出力されてしまうので削除する
-        doc.deletePage(doc.internal.getNumberOfPages());
+        doc.deletePage(doc.getNumberOfPages());
         doc.save();
     }
 });
