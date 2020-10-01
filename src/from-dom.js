@@ -11,8 +11,9 @@ const doc = new jsPDF({
     ]
 });
 doc.setFont('ipag', 'normal');
-doc.html(document.querySelector('.page'), {
+doc.html(document.querySelector('.container'), {
     callback: function (doc) {
+        doc.deletePage(doc.internal.getNumberOfPages());
         doc.save();
     }
 });

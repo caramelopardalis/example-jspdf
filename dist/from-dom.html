@@ -14,8 +14,11 @@
                 background-color: #eee;
             }
 
+            .container {
+                display: inline-flex;
+                flex-direction: column;
+            }
             .page {
-                display: inline-block;
                 overflow: hidden;
                 margin: 0;
                 padding: 0;
@@ -27,33 +30,38 @@
         </style>
     </head>
     <body>
-        <div class="page">
-            <table>
-                <thead>
-                    <tr>
-                        <th>No.</th>
-                        <th>言語</th>
-                        <th>拡張子</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>C#</td>
-                        <td>.cs</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Python</td>
-                        <td>.py</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Kuin</td>
-                        <td>.kn</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="container">
+            <div class="page">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>言語</th>
+                            <th>拡張子</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>C#</td>
+                            <td>.cs</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Python</td>
+                            <td>.py</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Kuin</td>
+                            <td>.kn</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="page">
+                <p>こんにちわこんにちわ！</p>
+            </div>
         </div>
         <script src="from-dom.js"></script>
     </body>
