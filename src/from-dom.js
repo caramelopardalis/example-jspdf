@@ -8,7 +8,8 @@ const doc = new jsPDF({
     unit: 'px',
     hotfixes: [
         'px_scaling'
-    ]
+    ],
+    format: [794, 1123]
 });
 doc.setFont('ipag', 'normal');
 doc.html(document.querySelector('.container'), {
