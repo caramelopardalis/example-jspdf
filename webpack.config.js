@@ -1,7 +1,8 @@
 module.exports = {
     mode: 'development',
     entry: {
-        'from-dom': './src/from-dom.js'
+        'from-dom': './src/from-dom.js',
+        'with-browser-report': './src/with-browser-report.js'
     },
     module: {
         rules: [
